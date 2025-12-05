@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HydroHope Web Page">
+    <meta name="keywords" content="HTML, CSSJavaScript">
+    
+    <meta name="author1" content="Mateo Rafael S. Bonilla">
+    
+    <meta name="author2" content="Charls Zeusef P. Palma">
+    
+    <meta name="author3" content="Aleja V. Ricaforte">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+    <title>WATER CONSERVATION</title>
+
+    <style>
+        body {
+            background-image: url(../imageshhp/back-home.png);
+        }
+		
+        h1 {
+            text-align: center;
+            font-size: 100px;
+            font-weight: 900;
+            margin-top: 20px; 
+        }
+
+        .glass-box {
+            background: rgba(0, 45, 80, 0.65);
+            margin: 30px auto 50px auto;
+            width: 85%;
+            border-radius: 50px;
+            text-align: center;
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+        }
+
+        .glass-box h2 {
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .glass-box h5 {
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 1.8;
+            width: 80%;
+            margin: auto;
+        }
+
+        .glass-box h5 b {
+            font-weight: 900;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 15px 40px;
+            border: 2px solid white;
+            border-radius: 40px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: #003d54;
+        }
+        
+        .shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.7);
+        }
+
+        #bubble1 {
+            position:absolute;
+            top: 70px;
+            left: 1150px;
+            width: 100px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer; 
+        }
+        
+        #bubble2 {
+            position:absolute;
+            top: 270px;
+            left: 1090px;
+            width: 100px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer; 
+        }
+        
+        #bubble3 {
+            position:absolute;
+            top: 100px;
+            left: 56px;
+            width: 100px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer; 
+        }
+        
+        #bubble4 {
+            position:absolute;
+            top: 430px;
+            left: 5px;
+            width: 100px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer; 
+        }
+        
+        .bubbles:hover {
+            transform: scale(1.3);
+            transition: transform 1s ease-in-out;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); } 
+            50% { transform: scale(1.3); } 
+            100% { transform: scale(1); }
+        }
+
+        .bubbles {
+            animation: pulse 4s infinite ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+
+	<div class="navbar">
+		<img src="../imageshhp/logo.png" alt="HydroHope Logo" style="height: 70px; margin-right: 20px;">
+		<ul class="nav-links">
+			<li><a href="index.html" class="active">ABOUT</a></li> 
+			<li><a href="methods.html">METHODS</a></li>
+			<li><a href="projects.html">PROJECTS</a></li>
+			<li><a href="impact.html">IMPACT</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+		</ul>
+	</div>
+
+    <h1 class="shadow">OUR BLUE PLANET</h1>
+
+    <div class="glass-box">
+        <h2>We need to conserve water.</h2>
+
+        <h5>
+            <b>BRIGHT FUTURES BEGIN WITH CLEAN WATER.</b> Fresh water is a limited resource. 
+            To ensure clean water for humans to sustain life, HydroHope stands for advocating 
+            for a better tomorrow, starting with understanding the importance of water conservation.
+        </h5>
+
+        <a href="#" class="btn">www.HydroHope.org</a>
+    </div>
+    
+    <img id="bubble1" class="bubbles" src="../imageshhp/bubble.png" style="width:200px;height:200px">
+    <img id="bubble2" class="bubbles" src="../imageshhp/bubble.png" style="width:80px;height:80px">
+    <img id="bubble3" class="bubbles" src="../imageshhp/bubble.png" style="width:120px;height:120px">
+    <img id="bubble4" class="bubbles" src="../imageshhp/bubble.png" style="width:190px;height:190px">
+
+</body>
+</html>
